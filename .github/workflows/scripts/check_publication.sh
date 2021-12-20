@@ -6,7 +6,7 @@ while read -r crate_name; do
         echo "'$crate_name' already published"
     else
         sed -i "s/^name \?=.*$/name = \"$crate_name\"/g" Cargo.toml
-        cargo publish --dry-run
+        cargo publish --dry-run --allow-dirty
     fi
 done < crate_names
 
