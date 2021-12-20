@@ -1,0 +1,21 @@
+name: CD
+
+on: workflow_dispatch
+
+jobs:
+
+  publish:
+    environment: Deployment
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          override: true
+      - name: Publish
+        run: bash .github/workflows/scripts/publish.sh
+        env:
+          CRATES_IO_TOKEN: ${{ secrets.CRATES_IO_TOKEN }}
