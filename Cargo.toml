@@ -1,0 +1,10 @@
+[package]
+name = ""
+version = "0.0.1"
+authors = ["Nicolas Ferré <nicolas.ferre.public@gmail.com>"]
+edition = "2021"
+description = "Crate reserved for Modor"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/modor-engine/modor-crate-reservation"
+readme = "./README_CRATE.md"
+exclude = [".github", "crate_names", "README.md"]
