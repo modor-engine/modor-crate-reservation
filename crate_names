@@ -4,6 +4,7 @@ modor_derive
 modor_editor
 modor_graphics
 modor_input
+modor_internal
 modor_network
 modor_physics
 modor_ui
