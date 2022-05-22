@@ -5,6 +5,7 @@ modor_editor
 modor_graphics
 modor_input
 modor_internal
+modor_math
 modor_network
 modor_physics
 modor_ui
