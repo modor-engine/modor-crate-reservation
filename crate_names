@@ -8,6 +8,7 @@ modor_internal
 modor_jobs
 modor_math
 modor_network
+modor_picking
 modor_physics
 modor_resources
 modor_text
